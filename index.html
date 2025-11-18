@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💳 Maquininha Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <h1 class="titulo">💳 Maquininha Online</h1>
+
+        <div class="card">
+            <input type="text" id="novoJogador" placeholder="Nome do jogador">
+            <button class="btn btn-add" onclick="adicionarJogador()">Adicionar Jogador</button>
+        </div>
+
+        <div class="card">
+            <label>Jogador:</label>
+            <select id="jogadorSelect"></select>
+        </div>
+
+        <div class="card">
+            <input type="number" id="valor" placeholder="Valor (R$)">
+            <div class="btn-row">
+                <button class="btn btn-ok" onclick="adicionar()">Adicionar +</button>
+                <button class="btn btn-remove" onclick="remover()">Remover -</button>
+            </div>
+        </div>
+
+        <h2 class="subtitulo">Saldos</h2>
+        <ul id="listaSaldos"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
